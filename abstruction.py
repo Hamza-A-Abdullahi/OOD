@@ -40,8 +40,9 @@ class Bird(Animal):
 class Reptiles(Animal):
     def __init__(self, age, weight, specie,name,region_found):
         super().__init__(age, weight, specie)
-        self.region= region_found
+        self.region_found= region_found
         self.name= name
+        self.specie= specie
 
     def is_venomous(self,value):
         return value
